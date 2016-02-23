@@ -17,6 +17,9 @@ def test_number_of_available_slots
 assert_equal(nil, @timetable1.available_slots)
 end
 
+def test_number_of_daily_slots
+assert_equal(0, @timetable1.daily_slots.size)
+end
 
 
 
