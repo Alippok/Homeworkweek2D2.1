@@ -17,6 +17,10 @@ def test_role
   assert_equal("Head coach", @coach1.role)
 end
 
+def test_qualies
+  assert_equal(["Rugby League Coaching Level 4", "Strength and Conditioning Level 5", "Food and Nutrition for Performance NA"], @coach1.qualies)
+end
+
 
 
 end
