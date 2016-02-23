@@ -21,6 +21,9 @@ def check_timetable_name(timetable)
  return timetable
 end
 
+def check_num_of_slots(timetable)
+  return timetable.daily_slots.size
+end
 
 
 

@@ -33,4 +33,15 @@ def test_if_coach_can_check_timetable_name
   assert_equal("Free Weights", @timetable1.name)
 end
 
+def test_if_coach_can_check_number_of_timetable_slots
+  @coach1.check_num_of_slots(@timetable1)
+  assert_equal(0, @timetable1.daily_slots.size)
 end
+
+end
+
+
+
+
+
+
