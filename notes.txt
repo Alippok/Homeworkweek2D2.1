@@ -2,13 +2,16 @@ Want the coach to be able to change players:
  - weight
  - metres run
  - tackles made
- - sessions to attend 
+ And be able to:
+ - take sessions to attend from the Timetable and add them to different players sessions to attend
  and the support staffs
  -qualifications
  Coach should have:
 - name(read-only)
 - role(read-only)
 
+Timetable should have:
+- time slots and locations e.g. 13:00 - weights room
 
 Want the support staff to be able to change:
  - players main nutritional goals
@@ -27,6 +30,7 @@ Want the support staff to be able to change:
  -metres run
  -tackles made
  -sessions to attend
+ and be able to find out all of the above
 
  Area for all to interact:
  -team (should contain all 3 'Persons' in a file)
