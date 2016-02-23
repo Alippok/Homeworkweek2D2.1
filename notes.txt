@@ -1,0 +1,35 @@
+Want the coach to be able to change players:
+ - weight
+ - metres run
+ - tackles made
+ - sessions to attend 
+ and the support staffs
+ -qualifications
+ Coach should have:
+- name(read-only)
+- role(read-only)
+
+
+Want the support staff to be able to change:
+ - players main nutritional goals
+ - VO2 max scores
+ Support staff should have:
+ - name
+ - role
+ - qualifications
+
+
+ Players should have:
+ -name
+ -position
+ -weight
+ -height
+ -metres run
+ -tackles made
+ -sessions to attend
+
+ Area for all to interact:
+ -team (should contain all 3 'Persons' in a file)
+
+
+
