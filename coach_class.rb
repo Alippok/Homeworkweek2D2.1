@@ -17,6 +17,9 @@ def add_qualifications(qualifications)
   
 end
 
+def check_timetable_name(timetable)
+ return timetable
+end
 
 
 
