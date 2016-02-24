@@ -9,7 +9,7 @@ def initialize(name)
 end
 
 def available_slots
-  slots_available =[]
+  slots_available = []
   for time, slot in @daily_slots
     if slot == "Free"
       slots_available << time
@@ -18,7 +18,19 @@ def available_slots
   return slots_available.size
 end
 
+def view_available_times
+  slots_available = []
+  for time, slot in @daily_slots
+    if slot == "Free"
+      slots_available << time
+    end
+  end
+  return slots_available
+end
 
+# def view_available_times_24_hour
+
+end
 
 
 
