@@ -25,6 +25,16 @@ def check_num_of_slots(timetable)
   return timetable.daily_slots.size
 end
 
+def check_num_free_slots(timetable)
+  all_slots = timetable.daily_slots
+  free_slots = []
+  for time, slot in all_slots
+    if slot == "Free"
+      free_slots << time
+    end
+  end
+  return free_slots
+end
 
 
 
