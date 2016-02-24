@@ -50,6 +50,20 @@ end
 return all_slots
 end
 
+def create_multi_slots(timetable, *new_times, action)
+
+  all_slots = timetable.daily_slots
+  new_slots = {}
+  for time in new_times
+    new_slots[time] = action
+  end
+  return new_slots
+
+end
+
+
+
+
 
 
 end 
