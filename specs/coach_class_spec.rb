@@ -43,7 +43,9 @@ def test_if_coach_can_check_number_of_free_slots
   assert_equal(10, result)
 end
 
-def 
+def test_if_coach_can_change_a_slot
+  @coach1.change_slot(@timetable1,10, "Forwards")
+  assert_equal( {9 => "Free", 10 => "Forwards", 11 => "Free", 12 => "Free", 13 => "Free", 14 => "Free", 15 => "Free", 16 => "Free", 17 => "Free", 18 => "Free" }, @timetable1.daily_slots)
 
 end
 
@@ -51,4 +53,4 @@ end
 
 
 
-
+end

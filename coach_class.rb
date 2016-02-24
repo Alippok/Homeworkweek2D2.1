@@ -33,9 +33,22 @@ def check_num_free_slots(timetable)
       free_slots << time
     end
   end
-  return free_slots
+  return free_slots.size
 end
 
+def change_slot(timetable, new_time, action)
+all_slots = timetable.daily_slots
+
+new_slots = {new_time => action}
+
+for time, slot in all_slots
+  if time == new_time
+    all_slots.merge!(new_slots)
+  end
+
+end
+return all_slots
+end
 
 
 
